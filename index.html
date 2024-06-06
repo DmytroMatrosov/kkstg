@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/logo.svg" />
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>KKS Tarnowskie Góry</title>
+
+  <meta property="og:site_name" content="KKS Tarnowskie Góry" />
+</head>
+
+<body>
+  <!-- Scroll top -->
+  <a href="#" class="scrollTop show-scroll" id="scroll-top">
+    <i class="bx bx-chevron-up scrollTop_icon"></i>
+  </a>
+
+  <!-- Header -->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="/" class="nav_logo">
+        <img src="img/logo.svg" width="100px" alt="KKS Tarnowskie Góry" />
+      </a>
+
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#home" class="nav_link">Klub</a>
+          </li>
+          <li class="nav_item">
+            <a href="#team" class="nav_link">Team</a>
+          </li>
+          <li class="hidden_item">
+            <a href="#arena" class="nav_link">Arena</a>
+          </li>
+          <li class="nav_item">
+            <a href="#shop" class="nav_link">Sklep</a>
+          </li>
+          <li class="nav_item">
+            <a href="#partners" class="nav_link">Sponsorzy</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav_toggle" id="nav-toggle">
+        <!--When clicked activate the class "opened"
+          to the button tag as well to the 4 SVG lines-->
+        <button class="menu" aria-label="Abrir Menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+          <svg width="40" height="41" viewBox="0 0 100 100">
+            <path class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+
+    <!--Home-->
+    <section class="home" id="home">
+      <div class="home_container bd-container bd-grid">
+
+        <div class="home_data">
+          <h1 class="home_title">WITAMY W</h1>
+          <h2 class="home_subtitle">KOSZYKARSKI KLUB <br />
+            SPORTOWY </h2>
+          <h2 class="home_subtitle">TARNOWSKIE GÓRY </h2>
+        </div>
+
+        <img src="img/basketball.svg" alt="Basketball" class="home_img" />
+      </div>
+    </section>
+
+    <!--Team-->
+    <section class="section bd-container" id="team">
+      <span class="section-subtitle">Sezon 2023/2024</span>
+      <h2 class="section-title">Podążaj za meczami</h2>
+
+      <div class="team_container bd-grid">
+
+        <div class="team_content">
+          <svg class="team_img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:space="preserve">
+            <g>
+              <path d="M21.8,36.8c6.9,0,12.4-5.6,12.4-12.4s-5.6-12.4-12.4-12.4S9.4,17.5,9.4,24.4S15,36.8,21.8,36.8z M21.8,16.4
+           c4.4,0,7.9,3.6,7.9,7.9s-3.6,7.9-7.9,7.9c-4.4,0-7.9-3.6-7.9-7.9S17.4,16.4,21.8,16.4z" />
+              <path
+                d="M21.8,39.9c-7.2,0-14.1,2.9-19.4,8.3c-0.9,0.9-0.9,2.3,0,3.2c0.4,0.4,1,0.7,1.6,0.7c0.6,0,1.2-0.2,1.6-0.7
+           c4.4-4.5,10.2-7,16.2-7c5.9,0,11.7,2.5,16.2,7c0.9,0.9,2.3,0.9,3.2,0c0.9-0.9,0.9-2.3,0-3.2C35.9,42.9,29,39.9,21.8,39.9z" />
+              <path d="M47.3,36.8c4,0,7.3-3.3,7.3-7.3c0-4-3.3-7.3-7.3-7.3s-7.3,3.3-7.3,7.3C39.9,33.5,43.2,36.8,47.3,36.8z M47.3,26.6
+           c1.6,0,2.8,1.3,2.8,2.8c0,1.6-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8C44.4,27.9,45.7,26.6,47.3,26.6z" />
+              <path d="M61.5,45.6c-5.3-4.9-12.6-6.9-19.9-5c-1.2,0.3-1.9,1.5-1.6,2.7c0.3,1.2,1.6,1.9,2.7,1.6c5.8-1.5,11.6,0,15.7,3.9
+           c0.4,0.4,1,0.6,1.5,0.6c0.6,0,1.2-0.2,1.6-0.7C62.5,47.9,62.4,46.5,61.5,45.6z" />
+            </g>
+          </svg>
+
+          <h3 class="team_title">Skład drużyny</h3>
+          <p class="team_description">
+            Obecny sztab trenerski i zawodnicy
+          </p>
+        </div>
+
+        <div class="team_content">
+          <svg class="team_img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:space="preserve">
+            <g>
+              <path
+                d="M20.5,36.6h-3.1c-0.6,0-1,0.4-1,1v3c0,0.6,0.4,1,1,1h3.1c0.6,0,1-0.4,1-1v-3C21.5,37.1,21,36.6,20.5,36.6z" />
+              <path
+                d="M33.5,36.6h-3.1c-0.6,0-1,0.4-1,1v3c0,0.6,0.4,1,1,1h3.1c0.6,0,1-0.4,1-1v-3C34.5,37.1,34.1,36.6,33.5,36.6z" />
+              <path
+                d="M46.6,36.6h-3.1c-0.6,0-1,0.4-1,1v3c0,0.6,0.4,1,1,1h3.1c0.6,0,1-0.4,1-1v-3C47.6,37.1,47.2,36.6,46.6,36.6z" />
+              <path
+                d="M20.5,49.5h-3.1c-0.6,0-1,0.4-1,1v3c0,0.6,0.4,1,1,1h3.1c0.6,0,1-0.4,1-1v-3C21.5,50,21,49.5,20.5,49.5z" />
+              <path
+                d="M33.5,49.5h-3.1c-0.6,0-1,0.4-1,1v3c0,0.6,0.4,1,1,1h3.1c0.6,0,1-0.4,1-1v-3C34.5,50,34.1,49.5,33.5,49.5z" />
+              <path
+                d="M46.6,49.5h-3.1c-0.6,0-1,0.4-1,1v3c0,0.6,0.4,1,1,1h3.1c0.6,0,1-0.4,1-1v-3C47.6,50,47.2,49.5,46.6,49.5z" />
+              <path d="M56,15.4H34.3v-1.9c2.3-0.9,3.9-3.1,3.9-5.7c0-3.4-2.8-6.1-6.2-6.1s-6.2,2.7-6.2,6.1c0,2.6,1.6,4.8,3.9,5.7v1.9H8
+		c-3.4,0-6.3,2.8-6.3,6.3V56c0,3.4,2.8,6.3,6.3,6.3h48c3.4,0,6.3-2.8,6.3-6.3V21.6C62.3,18.2,59.4,15.4,56,15.4z M32,6.2
+		c0.9,0,1.7,0.7,1.7,1.6c0,0.9-0.7,1.6-1.7,1.6s-1.7-0.7-1.7-1.6C30.3,6.9,31.1,6.2,32,6.2z M8,19.9h48c1,0,1.8,0.8,1.8,1.8v6.2H6.3
+		v-6.2C6.3,20.6,7,19.9,8,19.9z M56,57.8H8c-1,0-1.8-0.8-1.8-1.8V32.3h51.5V56C57.8,57,57,57.8,56,57.8z" />
+            </g>
+          </svg>
+
+          <h3 class="team_title">Terminarz</h3>
+          <p class="team_description">
+            Przeglądać informacje o przeszłych i nadchodzących meczach!
+          </p>
+        </div>
+
+
+
+        <div class="team_content">
+          <svg class="team_img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:space="preserve">
+            <g>
+              <path
+                d="M60,57.8H6.3V4c0-1.2-1-2.3-2.3-2.3S1.8,2.8,1.8,4v54.1c0,2.3,1.9,4.2,4.2,4.2H60c1.2,0,2.3-1,2.3-2.3S61.2,57.8,60,57.8z" />
+              <path d="M59,22.1H47.3c-1.2,0-2.3,1-2.3,2.3s1,2.3,2.3,2.3h6.8l-5.3,4.6H35.7c-0.7,0-1.4,0.3-1.8,0.9l-7.1,9.3H16.3
+		c-1.2,0-2.3,1-2.3,2.3s1,2.3,2.3,2.3h11.6c0.7,0,1.4-0.3,1.8-0.9l7.1-9.3h12.9c0.5,0,1.1-0.2,1.5-0.6l6.6-5.8v7.7
+		c0,1.2,1,2.3,2.3,2.3s2.3-1,2.3-2.3V25.3C62.3,23.6,60.8,22.1,59,22.1z" />
+            </g>
+          </svg>
+
+          <h3 class="team_title">Statystyka</h3>
+          <p class="team_description">
+            Śledź statystyki drużyny i zawodników
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!--Arena-->
+    <section class="section bd-container" id="arena">
+      <div class="arena_container bd-grid">
+        <div class="arena_data">
+          <span class="section-subtitle arena_initial">Obwodnica 8, Tarnowskie Góry</span>
+          <h2 class="section-title arena_initial">
+            Hala Sportowa
+          </h2>
+          <p class="arena_description">
+            🏀 🏀 🏀 Przyjdź i bądź częścią ekscytującej akcji koszykówki i dopinguj naszą drużynę do zwycięstwa! Twoje
+            wsparcie może zrobić całą różnicę!
+          </p>
+        </div>
+
+        <img src="img/hala_sportowa.png" alt="Hala Sportowa" class="arena_img" />
+      </div>
+    </section>
+
+
+    <!--Shop-->
+    <section class="section bd-container" id="shop">
+      <h2 class="section-title">Sklep ze sprzętem drużyny</h2>
+      <div class="shop_container bd-grid">
+
+        <div class="shop_content">
+          <img src="img/jersey_1.png" alt="" class="shop_img" />
+          <h3 class="shop_name">Koszulkę koszykarską</h3>
+          <span class="shop_detail">KKS Replika ciemna</span>
+          <span class="shop_price">80.00 zł</span>
+
+          <a href="#" class="button shop_button">
+            <i class="bx bx-cart"></i>
+          </a>
+        </div>
+
+        <div class="shop_content">
+          <img src="img/jersey_2.png" alt="" class="shop_img" />
+          <h3 class="shop_name">Koszulkę koszykarską</h3>
+          <span class="shop_detail">KKS Replika ciemna</span>
+          <span class="shop_price">80.00 zł</span>
+
+          <a href="#" class="button shop_button">
+            <i class="bx bx-cart"></i>
+          </a>
+        </div>
+
+        <div class="shop_content">
+          <img src="img/jersey_3.png" alt="" class="shop_img" />
+          <h3 class="shop_name">Koszulkę koszykarską</h3>
+          <span class="shop_detail">KKS Replika ciemna</span>
+          <span class="shop_price">80.00 zł</span>
+
+          <a href="#" class="button shop_button">
+            <i class="bx bx-cart"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="partners-section section bd-container" id="partners">
+      <h2 class="section-title">Nasi przyjaciele i partnerzy</h2>
+
+      <div class="partners-container">
+        <div class="partner">
+          <img src="img/partner1_logo.png" class="partner_img" alt="Partner 1">
+        </div>
+        <div class="partner">
+          <img src="img/partner2_logo.png" class="partner_img" alt="Partner 2">
+        </div>
+        <div class="partner">
+          <img src="img/partner3_logo.png" class="partner_img" alt="Partner 3">
+        </div>
+        <div class="partner">
+          <img src="img/partner4_logo.png" class="partner_img" alt="Partner 4">
+        </div>
+        <div class="partner">
+          <img src="img/partner5_logo.png" class="partner_img" alt="Partner 5">
+        </div>
+        <div class="partner">
+          <img src="img/partner6_logo.png" class="partner_img" alt="Partner 6">
+        </div>
+        <div class="partner">
+          <img src="img/partner7_logo.png" class="partner_img" alt="Partner 7">
+        </div>
+        <div class="partner">
+          <img src="img/partner8_logo.png" class="partner_img" alt="Partner 8">
+        </div>
+        <div class="partner">
+          <img src="img/partner9_logo.png" class="partner_img" alt="Partner 9">
+        </div>
+        <div class="partner">
+          <img src="img/partner10_logo.png" class="partner_img" alt="Partner 10">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--Footer-->
+  <footer class="section bd-container">
+    <div class="footer_container bd-grid">
+
+      <div class="footer_content">
+        <b class="footer_logo">
+          <span>KKS</span> Tarnowskie Góry
+        </b>
+        <span class="footer_description">Twój ulubiony klub.</span>
+
+        <div>
+          <a href="https://www.facebook.com/kkstg" class="footer_social" target="_blank"><i
+              class="bx bxl-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/kks-tg/" class="footer_social" target="_blank"><i
+              class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/kkstgbasketball/" class="footer_social" target="_blank"><i
+              class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer_content">
+        <h3 class="footer_title">Kontakt</h3>
+        <ul>
+          <li><a href="https://maps.app.goo.gl/v7G65kWb96jNKyns5" class="footer_link">
+              <i class="bx bx-map"></i>
+              Obwodnica 8, Tarnowskie Góry,
+              Śląskie 42-600, PL</a></li>
+          <li><a href="tel:+48-691-688-294" class="footer_link"><i class="bx bx-phone"></i> +48 691 688 294</a></li>
+          <li><a href="mailto:info@kkstg.pl" class="footer_link"><i class="bx bx-envelope"></i> info@kkstg.pl</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_content">
+        <h3 class="footer_title">Legal</h3>
+        <ul>
+          <li><a href="#" class="footer_link">Privacy policy</a></li>
+          <li><a href="#" class="footer_link">Terms and conditions</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="footer_copy">
+      KKS Tarnowskie Góry &#169; 2024
+      <a href="https://kkstg.pl" class="footer_link" target="_blank">
+        All Rights Reserved
+      </a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
