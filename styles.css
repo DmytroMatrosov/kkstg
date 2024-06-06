@@ -300,17 +300,21 @@ img {
   align-content: center;
 }
 
+.home_data {
+  margin-top: 2rem;
+}
+
 .home_title {
   font-size: var(--big-font-size);
   font-weight: var(--font-medium);
   color: var(--text-color);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-2);
 }
 
 .home_subtitle {
   font-size: var(--h1-font-size);
   color: var(--title-color);
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-3);
 }
 
 
@@ -591,19 +595,9 @@ img {
     display: none;
   }
 
-  .change-theme {
-    position: initial;
-    margin-top: 2px;
-    margin-left: 2.5rem;
-  }
-
   .home_container {
     height: 100vh;
     justify-items: center;
-  }
-
-  .home_container {
-    margin-bottom: -3rem;
   }
 
   .team_container,
@@ -629,12 +623,17 @@ img {
 }
 
 @media screen and (min-width: 960px) {
-  .home_container {
-    margin-top: 1rem;
-  }
 
   .nav_link {
     font-size: var(--small-font-size);
+  }
+
+  .nav_link {
+    transition: 0.3s;
+  }
+
+  .nav_link:hover {
+    color: var(--first-color-alt);
   }
 
   .home_title,
