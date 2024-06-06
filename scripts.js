@@ -30,7 +30,7 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
-  const scrollY = window.pageYOffset;
+  const scrollY = window.scrollY;
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
@@ -81,10 +81,10 @@ const sr = ScrollReveal({
 
 sr.reveal(
   `.home_data, .home_img,
+          .team_content,
           .arena_data, .arena_img,
-          .partners-section, .partner_img,
           .shop_content, .menu_content,
-          .team_content, .footer_container, .footer_content`,
+          .partners-container, .footer_content`,
   {
     interval: 50,
   }
