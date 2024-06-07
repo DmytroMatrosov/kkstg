@@ -322,6 +322,12 @@ img {
   margin-bottom: var(--mb-3);
 }
 
+.home_media{
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-right: var(--mb-3);
+}
+
 
 /* Buttons */
 .button {
@@ -520,6 +526,11 @@ img {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
   margin-top: 3.5rem;
+}
+
+.home_media:hover,
+.footer_social:hover {
+  color: var(--text-color-light);
 }
 
 /* Scroll bar */
