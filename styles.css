@@ -95,6 +95,10 @@ a {
   text-decoration: none;
 }
 
+strong {
+  color: var(--first-color)
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -342,7 +346,7 @@ img {
 }
 
 .arena_img {
-  width: 280px;
+  width: 320px;
   border-radius: 0.5rem;
   justify-self: center;
 }
@@ -428,6 +432,10 @@ img {
 }
 
 /* Partners  */
+.partners-section {
+  max-width: 1200px;
+}
+
 .partners-container {
   display: flex;
   flex-wrap: wrap;
@@ -437,8 +445,8 @@ img {
 
 .partner {
   /* Adjust the percentage to change the number of logos per row */
-  flex: 1 1 calc(25% - 40px);
-  max-width: calc(25% - 40px);
+  flex: 1 1 calc(20% - 40px);
+  max-width: calc(20% - 40px);
   box-sizing: border-box;
 }
 
@@ -535,27 +543,19 @@ img {
 @media screen and (min-width: 590px) {
 
   .home_container,
-  .arena_container,
-  .app_container {
+  .arena_container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
   .arena_data,
-  .arena_initial,
-  .app_data,
-  .app_initial {
+  .arena_initial {
     text-align: initial;
   }
 
-  .arena_img,
-  .app_img {
-    width: 380px;
+  .arena_img {
+    width: 450px;
     order: -1;
-  }
-
-  .app_store {
-    width: 130px;
   }
 
   .contact_container {
@@ -616,10 +616,6 @@ img {
   .shop_img {
     width: 130px;
   }
-
-  .app_store {
-    margin: 0 var(--mb-1) 0 0;
-  }
 }
 
 @media screen and (min-width: 960px) {
@@ -651,18 +647,16 @@ img {
     margin-top: var(--mb-1);
   }
 
-  .arena_container,
-  .app_container {
+  .arena_container {
     column-gap: 7rem;
   }
 }
 
-
 @media (max-width: 1200px) {
   .partner {
-    flex: 1 1 calc(33.33% - 40px);
-    /* 3 logos per row for medium screens */
-    max-width: calc(33.33% - 40px);
+    flex: 1 1 calc(25% - 40px);
+    /* 4 logos per row for medium screens */
+    max-width: calc(30% - 40px);
   }
 }
 

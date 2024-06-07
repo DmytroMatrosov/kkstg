@@ -34,7 +34,7 @@ function scrollActive() {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 64; //4rem -> 64px (header height).
+    const sectionTop = current.offsetTop - 96;
     sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
