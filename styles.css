@@ -107,7 +107,7 @@ img {
 
 /* class */
 .section {
-  padding: 7rem 0 2rem;
+  padding: 4rem 0;
 }
 
 .section-title,
@@ -437,6 +437,14 @@ img {
 }
 
 /* Partners  */
+.partners {
+  background-color: var(--container-color);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  /* align-content: center; */
+}
+
 .partners-section {
   max-width: 1200px;
 }
@@ -580,7 +588,7 @@ img {
   }
 
   .section {
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
   }
 
   .nav_logo img {
