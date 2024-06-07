@@ -92,6 +92,7 @@ ul {
 }
 
 a {
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -380,6 +381,9 @@ img {
   padding: 0 1.5rem;
 }
 
+.team_link:hover {
+  color: var(--first-color-alt);
+}
 
 /* Shop */
 .shop_container {
