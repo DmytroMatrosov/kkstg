@@ -301,7 +301,7 @@ img {
 
 .home_container {
   margin-top: -1rem;
-  height: calc(100vh - var(--header-height));
+  height: 100vh;
   align-content: center;
 }
 
@@ -448,7 +448,6 @@ img {
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  /* align-content: center; */
 }
 
 .partners-section {
@@ -480,7 +479,6 @@ img {
 .footer_container {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
-  /* box-shadow: 4px 0px 4px var(--shadow-color); */
 }
 
 .footer_logo {
@@ -621,7 +619,6 @@ img {
   }
 
   .home_container {
-    height: 100vh;
     justify-items: center;
   }
 
@@ -647,9 +644,6 @@ img {
 
   .nav_link {
     font-size: var(--small-font-size);
-  }
-
-  .nav_link {
     transition: 0.3s;
   }
 
@@ -669,7 +663,7 @@ img {
 
   .home_img {
     width: 500px;
-    margin-top: var(--mb-1);
+    margin-top: var(--mb-2); 
   }
 
   .arena_container {
